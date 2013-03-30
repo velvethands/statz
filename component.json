@@ -4,6 +4,10 @@
   "dependencies": {
     "jquery": "~1.9.1",
     "bacon": "~0.3.0",
-    "normalize-css": "~2.1.0"
+    "normalize-css": "~2.1.0",
+    "handlebars": "~1.0.0-rc.3",
+    "requirejs": "~2.1.5",
+    "less": "less",
+    "less.js": "~1.4.0-b2"
   }
 }

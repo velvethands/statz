@@ -2,10 +2,11 @@ require.config({
   baseUrl: 'js',
   paths: {
     $: '../components/jquery/jquery',
-    bacon: '../components/bacon/dist/Bacon',
-    handlebars: '../components/handlebars/handlebars',
-    lessjs: '../components/less.js/dist/less-1.3.3',
-    text: '../components/requirejs-text/text'
+    Bacon: '../components/bacon/dist/Bacon',
+    Handlebars: '../components/handlebars/handlebars',
+    _: '../components/lodash/dist/lodash',
+    text: '../components/requirejs-text/text',
+    hbs: 'require-handlebars'
   },
   shim: {
     '$': {
@@ -13,10 +14,13 @@ require.config({
     },
     'Handlebars': {
       exports: 'Handlebars'
+    },
+    'Bacon': {
+      exports: 'Bacon'
     }
   }
 });
 
-require(['main'], function(App) {
-  $("#content").html(App())
+require(['main', 'Bacon', '$', 'Handlebars', '_'], function(Main) {
+  Main()
 });

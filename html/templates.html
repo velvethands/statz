@@ -1,3 +1,21 @@
-<div>
-  <div>lol</div>
-</div>
+<script id="team-table" type="text/x-handlebars-partial-template">
+  <div>
+    <table>
+      {{#each this}}
+      <tr>
+        <td>{{name}}</td>
+      </tr>
+      {{/each}}
+    </table>
+  </div>
+</script>
+
+<script id="nav" type="text/x-handlebars-template">
+  <nav>
+    <ul>
+      <li><a href="#">Otteluohjelma</a></li>
+      <li><a href="#">Sarjataulukko</a></li>
+      <li><a href="#">Joukkueet</a></li>
+    </ul>
+  </nav>
+</script>

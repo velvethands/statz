@@ -1,6 +1,15 @@
-define(['text!../html/templates.html', '$', 'bacon', 'handlebars', 'lessjs'], function(html) {
+define(['hbs!../html/templates.html'], function(templates) {
   return function() {
-    var template = Handlebars.compile(html)
-    return template()
+    var teams = Bacon.fromPromise($.ajax({
+      url: 'rest/teams',
+      type:'get',
+      dataType: 'json'
+    })).toProperty()
+    teams.onValue(function(data) {
+      $("header").html(templates.render('nav', data))
+    })
+    teams.onError(function(data) {
+      console.log(data)
+    })
   }
 });

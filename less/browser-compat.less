@@ -1,0 +1,6 @@
+.three-stop-radial-gradient(@form, @stop1, @stop2, @stop3) {
+  background: @stop3;
+  background: radial-gradient(@form at center, @stop1, @stop2, @stop3);
+  background: -moz-radial-gradient(center, @form cover, @stop1, @stop2, @stop3);
+  background: -webkit-radial-gradient(center, @form cover, @stop1, @stop2, @stop3);
+}

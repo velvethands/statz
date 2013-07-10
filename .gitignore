@@ -2,3 +2,11 @@
 *.iml
 .env
 public/components
+!public/components/bacon/dist/Bacon.js
+!public/components/handlebars/handlebars.js
+!public/components/jquery/jquery.js
+!public/components/less.js/dist/less-1.4.1.js
+!public/components/lodash/dist/lodash.js
+!public/components/requirejs-text/text.js
+!public/components/requirejs/require.js
+!public/components/normalize-css/normalize.css

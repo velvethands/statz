@@ -11,8 +11,6 @@ statz
         gem install bundler
     Heroku
         brew install heroku-toolbelt
-        heroku plugins:install git://github.com/ddollar/heroku-config.git
-        heroku config:pull
 
 ## Start 
     bundle install
@@ -20,5 +18,10 @@ statz
     foreman start
 
 ## Push to heroku
+    First time:
+    heroku plugins:install git://github.com/ddollar/heroku-config.git
+    heroku config:pull
     heroku git:remote -a velvethands
+    
+    Deploy new version:
     git push heroku master

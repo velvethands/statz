@@ -11,6 +11,8 @@ statz
         gem install bundler
     Heroku
         brew install heroku-toolbelt
+        heroku plugins:install git://github.com/ddollar/heroku-config.git
+        heroku config:pull
 
 ## Start 
     bundle install

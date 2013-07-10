@@ -2,16 +2,16 @@ statz
 =====
 
 # Tools
-* Bower
+## Bower
     brew install npm
     npm install -g bower
-* Ruby v 2.0
+## Ruby v 2.0
     brew install ruby
-* Bundler
+## Bundler
     gem install bundler
-* Foreman
+##Foreman
     gem install foreman
-* Heroku
+## Heroku
     brew install heroku-toolbelt
 
 # Start 

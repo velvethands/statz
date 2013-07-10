@@ -1,4 +1,4 @@
-define(['Handlebars'], function (Handlebars) {
+define(['Handlebars, $'], function (Handlebars, $) {
 
   var loadResource = function (templateFile, parentRequire, onload) {
     parentRequire([("text!" + templateFile)], function (templateFileContent) {
